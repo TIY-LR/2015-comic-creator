@@ -10,5 +10,5 @@ export default DS.Model.extend({
   /**
    * This project has many tiles
    */
-  tiles: DS.hasMany('edit', {async: true}),
+  project: DS.hasMany('tiles', {async: true}),
 });
