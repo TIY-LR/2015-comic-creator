@@ -1,8 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'title',
-  tagName: 'img',
+  tagName: 'form',
 
   // Set starting values
   setStartingValues: Ember.on('init', function() {
@@ -14,6 +13,7 @@ export default Ember.Component.extend({
   }),
 
   submit(ev) {
+    debugger;
     ev.preventDefault();
 
     var data = this.getProperties('title', 'img');
