@@ -5,10 +5,11 @@ import DS from 'ember-data';
  */
 export default DS.Model.extend({
   title: DS.attr('string'),
-  cover: DS.attr('img'),
+  cover: DS.attr('string'),
+  category: DS.attr('string'),
 
   /**
    * This project has many tiles
    */
-  project: DS.hasMany('tiles', {async: true}),
+  tiles: DS.hasMany('tile', {async: true}),
 });

@@ -4,8 +4,9 @@ export default DS.Model.extend({
   /**
    * Properties for our model
    */
-  edit: DS.attr('edit'),
-  delete: DS.attr('delete'),
+  url: DS.attr('string'),
+  caption: DS.attr('string'),
+  orderNumber: DS.attr('number'),
 
   /**
    * Set up the relationship to a project
