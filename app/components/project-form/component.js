@@ -13,7 +13,6 @@ export default Ember.Component.extend({
   }),
 
   submit(ev) {
-    debugger;
     ev.preventDefault();
 
     var data = this.getProperties('title', 'img');
