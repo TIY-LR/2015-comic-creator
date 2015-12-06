@@ -5,7 +5,7 @@
 </div>
 <div class="mdl-grid">
   {{#each model.tiles as |tile|}}
-    {{project-edit-items tile=tile}}
+    {{project-edit-items tile=tile currentlyEditing=tileService.currentlyEditing}}
   {{/each}}
 </div>
 <div class="actions">

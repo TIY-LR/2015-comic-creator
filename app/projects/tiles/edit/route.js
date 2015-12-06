@@ -6,6 +6,6 @@ export default Ember.Route.extend({
   afterModel(tile) {
     // Store something that says we should show the edit form for our current `tile`
 
-    this.set('tileService.editingTile', tile);
+    this.set('tileService.currentlyEditing', tile);
   },
 });
