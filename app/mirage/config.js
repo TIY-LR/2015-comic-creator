@@ -7,6 +7,12 @@ export default function() {
   this.put('/projects/:id');
   this.del('/projects/:id');
 
+  this.get('/tiles');
+  this.post('/tiles');
+  this.get('/tiles/:id');
+  this.put('/tiles/:id');
+  this.del('/tiles/:id');
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
