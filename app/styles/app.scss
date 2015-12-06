@@ -11,7 +11,12 @@ html {
   background: #545151;
 }
 
-h3 {
+.mdl-layout__drawer {
+  background-color: unquote("rgba(#{$color-accent}, 0.87)");
+}
+
+h3, .header-title,
+.mdl-navigation  {
   font-family: 'Bangers';
   color: unquote("rgba(#{$color-accent}, 0.87)");
   text-shadow: 1px 1px 1px #000;
