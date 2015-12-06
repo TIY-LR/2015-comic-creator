@@ -5,13 +5,14 @@
 </div>
 <div class="mdl-grid">
   {{#each model.tiles as |tile|}}
-    {{project-edit-items tile=tile currentlyEditing=tileService.currentlyEditing}}
+    {{project-edit-items tile=tile currentlyEditing=tileService.currentlyEditing onSave='tileHasSaved'}}
   {{/each}}
 
   <a href="#" class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone" {{action 'addTile' model}}>
     <div class="comic-card demo-card-square mdl-card mdl-shadow--2dp">
       <div class="mdl-card__title mdl-card--expand">
         {{mdl-icon icon='add'}}
+
       </div>
     </div>
   </a>

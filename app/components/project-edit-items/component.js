@@ -19,5 +19,12 @@ export default Ember.Component.extend({
     delete(tile) {
       tile.destroyRecord();
     },
+
+    saveTile(tile) {
+      tile.save();
+
+      // Tell the route we are done editing
+      this.sendAction('onSave');
+    },
   },
 });

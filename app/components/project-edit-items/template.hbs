@@ -13,14 +13,18 @@
   </div>
 </div>
 
+{{log tile.title}}
+
 {{#if editing}}
-  {{#mdl-card title='Edit Tile' class="comic-card"}}
-    <div class="mdl-card__supporting-text">
-      {{input placeholder="Url" value=tile.url}}
-      {{input placeholder="Caption" value=tile.caption}}
-    </div>
-    {{#mdl-card-actions}}
-      {{mdl-button text='Submit'}}
-    {{/mdl-card-actions}}
-  {{/mdl-card}}
+  <form action="#" {{action 'saveTile' tile on="submit"}}>
+    {{#mdl-card title='Edit Tile' class="comic-card"}}
+      <div class="mdl-card__supporting-text">
+        {{mdl-textfield label="Url" value=tile.url}}
+        {{mdl-textfield label="Caption" value=tile.caption}}
+      </div>
+      {{#mdl-card-actions}}
+        {{mdl-button text='Submit'}}
+      {{/mdl-card-actions}}
+    {{/mdl-card}}
+  </form>
 {{/if}}

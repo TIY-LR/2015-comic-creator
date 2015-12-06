@@ -17,5 +17,11 @@ export default Ember.Route.extend({
 
       project.get('tiles').pushObject(tile);
     },
+
+    tileHasSaved() {
+      this.set('tileService.currentlyEditing', null);
+
+      this.transitionTo('projects.tiles.index');
+    },
   },
 });
