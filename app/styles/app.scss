@@ -15,8 +15,7 @@ html {
   background-color: unquote("rgba(#{$color-accent}, 0.87)");
 }
 
-h3, .header-title,
-.mdl-navigation  {
+h3, .header-title {
   font-family: 'Bangers';
   color: unquote("rgba(#{$color-accent}, 0.87)");
   text-shadow: 1px 1px 1px #000;
@@ -29,9 +28,9 @@ h3, .header-title,
 
 .com-caption {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   left: 20px;
-  color: $color-accent;
+  color: unquote("rgba(#{$color-accent}, 0.87)");
   font-size: 2rem;
   text-align: center;
 }
