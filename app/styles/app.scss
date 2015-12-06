@@ -7,9 +7,13 @@ $color-accent: $palette-yellow-700;
 
 @import 'material-design-lite';
 
+html {
+  background: #111;
+}
+
 h3 {
   font-family: 'Bangers';
-  color: $color-accent;
+  color: unquote("rgba(#{$color-accent}, 0.87)");
 }
 
 .comic-card {
