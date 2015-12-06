@@ -14,8 +14,10 @@
   </div>
 </div>
 <div class="mdl-grid">
-  {{project-list-item}}
-  {{project-list-item}}
-  {{project-list-item}}
+  <div class="mdl-grid">
+    {{#each model as |project|}}
+      {{project-list-item project=project}}
+    {{/each}}
+  </div>
 </div>
 {{outlet}}

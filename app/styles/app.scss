@@ -7,7 +7,7 @@
 
 .com-caption {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 50px;
   color: white;
   font-size: 3rem;
@@ -16,4 +16,18 @@
 .com-tile-img {
   width: 100%;
   margin: auto;
+}
+
+.fa {
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+// .fa-pencil {
+//   padding-left: 8rem;
+// }
+
+.actions {
+  float: right;
+  margin: 4rem 3rem 2rem 0;
 }
