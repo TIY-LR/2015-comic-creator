@@ -4,8 +4,9 @@
     <p class="com-caption">{{tile.caption}}</p>
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      <i class="fa fa-trash"></i></a>
+    {{#mdl-button on-click=(action 'delete' tile)}}
+      <i class="fa fa-trash"></i>
+    {{/mdl-button}}
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
       <i class="fa fa-pencil"></i></a>
   </div>
