@@ -1,4 +1,15 @@
+@import "_color-definitions";
+
+$color-primary: $palette-red-500;
+$color-primary-dark: $palette-red-700;
+$color-accent: $palette-yellow-700;
+
+
 @import 'material-design-lite';
+
+// h3 {
+//   font-family: 'Bangers', cursive;
+// }
 
 .comic-card {
   width: 80%;

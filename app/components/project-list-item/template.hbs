@@ -7,5 +7,8 @@
     {{#link-to 'projects.tiles' project class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"}}
       <i class="fa fa-star-o"></i>
     {{/link-to}}
+    {{#mdl-button on-click=(action 'delete' project)}}
+      <i class="fa fa-trash"></i>
+    {{/mdl-button}}
   </div>
 </div>
