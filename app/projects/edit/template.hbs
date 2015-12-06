@@ -1,15 +1,9 @@
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--12-col">
-    <h3>{{model.title}}</h3>
+    <h3>Editing {{model.title}}</h3>
   </div>
 </div>
 <div class="mdl-grid">
-  {{#each model.tiles as |tile|}}
-    {{project-edit-items tile=tile}}
-  {{/each}}
+  {{project-form startingValues=model onsubmit="createNewProject"}}
 </div>
-<div class="actions">
-  {{#link-to 'projects.index'}}
-    <mdl-button isFloating=true icon='star'>Star</mdl-button>
-  {{/link-to}}
-</div>
+{{outlet}}

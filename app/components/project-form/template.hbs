@@ -1,5 +1,10 @@
 {{mdl-textfield label='Title' value=title}}
 {{mdl-textfield label='Cover URL' value=cover isLabelFloating=false}}
+
+<h3>Category</h3>
+<p>{{mdl-radio value='comics' text='Comics' name='category' on-click=(action 'selectCategory' 'comics') checked=(eq category 'comics')}}</p>
+<p>{{mdl-radio value='movies' text='Movies' name='category' on-click=(action 'selectCategory' 'movies') checked=(eq category 'movies')}}</p>
+
 <div class="actions-form">
   {{mdl-button isFloating=true icon='star'}}
 </div>

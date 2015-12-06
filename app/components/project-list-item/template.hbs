@@ -4,8 +4,15 @@
     <img class="com-tile-img" src="{{project.cover}}" alt="">
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    {{#link-to 'projects.tiles' project class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"}}
-      <i class="fa fa-star-o"></i>
+    {{#link-to 'projects.tiles' project}}
+      {{#mdl-button}}
+        <i class="fa fa-star-o"></i>
+      {{/mdl-button}}
+    {{/link-to}}
+    {{#link-to 'projects.edit' project}}
+      {{#mdl-button}}
+        <i class="fa fa-edit"></i>
+      {{/mdl-button}}
     {{/link-to}}
     {{#mdl-button on-click=(action 'delete' project)}}
       <i class="fa fa-trash"></i>
