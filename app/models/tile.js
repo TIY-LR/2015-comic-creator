@@ -6,7 +6,7 @@ export default DS.Model.extend({
    */
   url: DS.attr('string'),
   caption: DS.attr('string'),
-  orderNumber: DS.attr('number'),
+  orderNumber: DS.attr('number', {defaultValue: 0}),
 
   /**
    * Set up the relationship to a project
