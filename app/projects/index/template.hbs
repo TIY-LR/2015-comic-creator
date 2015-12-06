@@ -1,22 +1,3 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col">
-    <h3>COMICS</h3>
-  </div>
-</div>
-<div class="mdl-grid">
-  {{#each model as |project|}}
-    {{project-list-item project=project}}
-  {{/each}}
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col">
-    <h3>MOVIES</h3>
-  </div>
-</div>
-  <div class="mdl-grid">
-    {{#each model as |project|}}
-      {{project-list-item project=project}}
-    {{/each}}
-  </div>
+{{project-list projects=model category="comics"}}
 
-{{outlet}}
+{{project-list projects=model category="movies"}}

@@ -1,0 +1,10 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
+    <h3 class="category-title">{{attrs.category}}</h3>
+  </div>
+</div>
+<div class="mdl-grid">
+  {{#each filteredProjects as |project|}}
+    {{project-list-item project=project}}
+  {{/each}}
+</div>
