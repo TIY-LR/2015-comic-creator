@@ -4,15 +4,9 @@
   </div>
 </div>
 <div class="mdl-grid">
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
-    {{project-edit-items}}
+  {{#each model.tiles as |tile|}}
+    {{project-edit-items tile=tile}}
+  {{/each}}
 </div>
 <div class="actions">
   {{mdl-button isFloating=true icon='star'}}

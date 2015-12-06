@@ -1,4 +1,5 @@
 export default function() {
+  this.urlPrefix = 'http://comiccreator.azurewebsites.net';
   this.namespace = 'api';
 
   this.get('/projects');
