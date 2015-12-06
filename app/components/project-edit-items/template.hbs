@@ -7,7 +7,23 @@
     {{#mdl-button on-click=(action 'delete' tile)}}
       <i class="fa fa-trash"></i>
     {{/mdl-button}}
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      <i class="fa fa-pencil"></i></a>
+    {{#link-to 'projects.tiles.edit' tile class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"}}
+      <i class="fa fa-pencil"></i>
+    {{/link-to}}
   </div>
 </div>
+
+{{#if editing}}
+  {{#mdl-card title='My card' class="comic-card"}}
+    <div class="mdl-card__supporting-text">
+      {{input placeholder="Url" value=tile.url}}
+      {{input placeholder="Url" value=tile.caption}}
+    </div>
+    {{#mdl-card-actions}}
+      {{mdl-button text='Get Started'}}
+    {{/mdl-card-actions}}
+    {{#mdl-card-buttons}}
+      {{mdl-button icon='share'}}
+    {{/mdl-card-buttons}}
+  {{/mdl-card}}
+{{/if}}

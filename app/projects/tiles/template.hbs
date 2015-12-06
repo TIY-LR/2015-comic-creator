@@ -1,0 +1,13 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
+    <h3>{{model.title}}</h3>
+  </div>
+</div>
+<div class="mdl-grid">
+  {{#each model.tiles as |tile|}}
+    {{project-edit-items tile=tile}}
+  {{/each}}
+</div>
+<div class="actions">
+  {{mdl-button isFloating=true icon='star'}}
+</div>

@@ -13,7 +13,7 @@ export default Ember.Route.extend({
 
       project.save().then(() => {
 
-        this.transitionTo('projects.edit', project);
+        this.transitionTo('projects.tiles', project);
       });
     },
   },
