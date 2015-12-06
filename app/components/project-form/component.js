@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   // Set starting values
   setStartingValues: Ember.on('init', function() {
     var startingValues = this.getAttr('startingValues');
-    var data = startingValues.getProperties('title', 'img');
+    var data = startingValues.getProperties('caption', 'img');
 
     // Set title, image on current Component
     this.setProperties(data);
